@@ -12,6 +12,16 @@ void factorialx(int x)
     printf("%ld\n", y);
 }
 
+int factorial(int x)
+{
+    long int y=1;
+    for(int i=x; i>1; i--)
+    {
+        y*=i;
+    }
+
+    return y;
+}
 
 int main()
 {
@@ -24,16 +34,6 @@ int main()
 }
 
 
-/* int factorial(int x) */
-/* { */
-/*     long int y=1; */
-/*     for(int i=x; i>1; i--) */
-/*     { */
-/*         y*=i; */
-/*     } */
-
-/*     return y; */
-/* } */
 
 /* int main() */
 /* { */
