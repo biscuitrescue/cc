@@ -1,47 +1,19 @@
 #include <stdio.h>
 
-
-void factorialx(int x)
-{
-    long int y=1;
-    for(int i=x; i>1; i--)
-    {
-        y*=i;
+int calc_fact(int x){
+    int factorial=1;
+    for(int i=1; i<=x; i++){
+        factorial*=i;
     }
 
-    printf("%ld\n", y);
+    return factorial;
 }
 
-int factorial(int x)
-{
-    long int y=1;
-    for(int i=x; i>1; i--)
-    {
-        y*=i;
-    }
-
-    return y;
-}
-
-int main()
-{
-    int num;
-    printf("Please enter your number: ");
-    scanf("%d", &num);
-    factorialx(num);
+int main(){
+    int x;
+    printf("Enter your number: ");
+    scanf("%d", &x);
+    printf("%d\n", calc_fact(x));
 
     return 0;
 }
-
-
-
-/* int main() */
-/* { */
-/*     int num; */
-/*     printf("Please enter your number: "); */
-/*     scanf("%d", &num); */
-/*     long int l=factorial(num); */
-/*     printf("%ld\n", l); */
-
-/*     return 0; */
-/* } */
